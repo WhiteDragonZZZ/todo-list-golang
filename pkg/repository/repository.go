@@ -7,6 +7,7 @@ import (
 
 type Authorization interface {
 	CreateUser(user todo_list_golang.User) (int, error)
+	GetUser(username, password string) (todo_list_golang.User, error)
 }
 
 type TodoList interface {
